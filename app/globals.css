@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-mint text-ink antialiased;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-6xl px-6 py-16 md:px-10 md:py-24;
+}
+
+.card {
+  @apply rounded-xl2 border border-white/70 bg-white/85 p-6 shadow-soft backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1;
+}
+
+.fade-up {
+  animation-delay: var(--delay, 0ms);
+  @apply animate-rise;
+}
+
+input,
+textarea {
+  @apply w-full rounded-xl border border-sage bg-white px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-stone;
+}
